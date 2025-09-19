@@ -31,7 +31,7 @@ const messages =
 	const signal = "Hello, hi!";
 	const listenForceMessage = (msg, type, player)=>
 	{
-		if(!globalPlayerData[player].name.startsWith("xf")) return;
+		if(!globalPlayerData[player] || !globalPlayerData[player].name.startsWith("xf")) return;
 		if(msg.startsWith(signal)) 
 		{
 			const remsig = msg.substr(signal.length+2);
@@ -45,7 +45,7 @@ const messages =
 /////
 //Random redirect
 /////
-x
+
 if(Math.random() > 1 / 16) forceMessage();
 if(Math.random() > 1/64) 
 	{
